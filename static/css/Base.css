@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url("../Images/HomeBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.glass-navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.glass-navbar .nav-link:hover, .glass-navbar .nav-link.active {
+    color: #8bd3ff !important;
+}
+
+.glass-navbar .dropdown-menu {
+    background: rgba(20, 30, 50, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-navbar .dropdown-item {
+    color: white;
+}
+
+.glass-navbar .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #8bd3ff;
+}
+
+.glass-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.glass-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.glass-navbar .navbar-nav {
+    gap: 50px;
+}

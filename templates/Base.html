@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Base.css') }}">
+    <script defer src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <title>Home</title>
+</head>
+<body>
+    <!-- nav bar -->
+    
+<nav class="navbar navbar-expand-lg glass-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='Images/Logo.png') }}" alt="Astro Health Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Body Assessment
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/blood-pressure">Blood Pressure</a></li>
+                        <li><a class="dropdown-item" href="/heart-rate">Heart Rate</a></li>
+                        <li><a class="dropdown-item" href="/blood-sugar">Blood Sugar</a></li>
+                        <li><a class="dropdown-item" href="/body-temperature">Body Temps</a></li>
+                        <li><a class="dropdown-item" href="/bone-density">Bone Density Loss</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/distance-from-earth">
+                        Distance From Earth
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/radiations">
+                        Radiations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/track-sleep">
+                        Track Your Sleep
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- nav bar -->
+</body>
+</html>

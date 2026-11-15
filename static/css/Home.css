@@ -1,0 +1,129 @@
+body{
+        background-image: url("../Images/HomeBackground.jpg");
+
+}
+.Content {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.Content p:nth-child(1) {
+    /* max-width: 70%; */
+    font-weight: 700;
+    font-size: 100px;
+    /* font-style: ; */
+}
+
+@media (max-width: 990px) {
+    .Content p:nth-child(1) {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 694px) {
+    .Content p:nth-child(1) {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 521px) {
+    .Content p:nth-child(1) {
+        font-size: 30px;
+    }
+}
+
+.Content p:nth-child(2) {
+    max-width: 70%;
+}
+
+.ContentCards {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* height: 500px; */
+    /* width: 345px; */
+    margin: 4px;
+    padding: 8px;
+    background-color: var(--backgroundcolor);
+    border-radius: 8px;
+}
+
+.Card:hover {
+    background-color: var(--backgroundhovercolor);
+}
+
+.CardImg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 313px;
+    /* margin: 5px; */
+    border-radius: 7px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.20);
+
+}
+
+.CardImg1 {background-image: url("../Images/AstronautMood.jpg");}
+.CardImg2 {background-image: url("../Images/ImmuneSystem.jpg");}
+.CardImg3 {background-image: url("../Images/Gravity.jpg");}
+.CardImg4 {background-image: url("../Images/HealthRisks.jpg");}
+
+.CardText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.CardHeading {
+    /* margin: 11px 10px; */
+}
+
+.CardHeading h2 {
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+.CardParagraph {
+    max-width: 300px;
+}
+
+.CardParagraph p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+}
+
+.CardSubmit {
+    /* margin: 10px 100px 10px; */
+    border-radius: 20px;
+    border: none;
+    /* height: 20px; */
+    width: 126px;
+    text-align: center;
+    background-color: var(--backgroundhovercolor);
+    padding: 4px;
+}
+
+.CardSubmit:hover {
+    scale: 1.1;
+}

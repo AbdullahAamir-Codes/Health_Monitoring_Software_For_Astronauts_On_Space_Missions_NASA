@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    --hovercolor: #8bd3ff;
+    --backgroundcolor: rgba(20, 30, 50, 0.85);
+    --backgroundhovercolor: rgba(255, 255, 255, 0.15);
+    --navbarbackground: rgba(255, 255, 255, 0.12);
+}
+
 * {
     color: white;
     padding: 0;
@@ -10,11 +17,11 @@
 }
 
 body {
-    background-image: url("../Images/HomeBackground.jpg");
+    /* background-image: url("../Images/HomeBackground.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
 }
 
 .navbar-brand img {
@@ -24,7 +31,7 @@ body {
 }
 
 .glass-navbar {
-    background: rgba(255, 255, 255, 0.12) !important;
+    background: var(--navbarbackground) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -37,11 +44,11 @@ body {
 }
 
 .glass-navbar .nav-link:hover, .glass-navbar .nav-link.active {
-    color: #8bd3ff !important;
+    color: var(--hovercolor) !important;
 }
 
 .glass-navbar .dropdown-menu {
-    background: rgba(20, 30, 50, 0.85);
+    background: var(--backgroundcolor);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -52,8 +59,8 @@ body {
 }
 
 .glass-navbar .dropdown-item:hover {
-    background: rgba(255, 255, 255, 0.15);
-    color: #8bd3ff;
+    background: var(--backgroundhovercolor);
+    color: var(--hovercolor);
 }
 
 .glass-navbar .navbar-toggler {

@@ -1,0 +1,54 @@
+body {
+    background-image: url("../Images/HeartRate.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.HeartVideo {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.HeartVideo video {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    /* border: 2px solid red; */
+}
+
+.Content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--backgroundcolor);
+    padding: 8px;
+    gap: 8px;
+
+}
+
+.Section1, .Section2, .Section3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.Section1 p:nth-of-type(1), .Section2 p:nth-of-type(1), .Section3 p:nth-of-type(1){
+    font-weight: 700;
+    font-size: 40px;
+}
+.Section1 p:nth-child(2), .Section2 p:nth-child(2) {
+    max-width: 90%;
+}
+.Content button{
+    background-color: rgba(142, 193, 218, 0.901);
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/HeartRate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Base.css') }}">
+    <script defer src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <title>Heart Rate</title>
+</head>
+<body>
+    <!-- nav bar -->
+    
+<nav class="navbar navbar-expand-lg glass-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='Images/Logo.png') }}" alt="Astro Health Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Body Assessment
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/BloodPressure">Blood Pressure</a></li>
+                        <li><a class="dropdown-item active" href="/HeartRate">Heart Rate</a></li>
+                        <li><a class="dropdown-item" href="/BloodSugar">Blood Sugar</a></li>
+                        <li><a class="dropdown-item" href="/BodyTemperature">Body Temps</a></li>
+                        <li><a class="dropdown-item" href="https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/">Bone Density Loss</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.nasa.gov/hrp/hazard-distance-from-earth/">
+                        Distance From Earth
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.nasa.gov/hrp/hazard-space-radiation/">
+                        Radiations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.nasa.gov/humans-in-space/science-in-space-week-of-sept-15-2023-sleep-on-station/">
+                        Track Your Sleep
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- nav bar -->
+     <div class="HeartVideo">
+    <video autoplay muted loop playsinline>
+        <source src="{{ url_for('static', filename='Videos/HeartAnimation.webm') }}" type="video/webm">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+     <div class="Content">
+        <div class="Section1">
+        <p>Why To Use Heart Rate Feature In Space</p>
+        <p>Space is an extraordinary environment, but it places unusual demands on the human body. Without Earth's gravity, the cardiovascular system must adapt to changes in blood distribution and circulation. Continuous heart rate monitoring can help identify important changes in an astronaut's cardiovascular activity.           
+        </p>
+        <p>
+            Continuous heart rate monitoring can help identify important changes in an astronaut's cardiovascular activity.
+        </p>
+        <ul>
+            <li>Understand how the heart responds to microgravity.</li>
+            <li>Identify unusual heart rate patterns that may require further investigation.</li>
+            <li>Monitor cardiovascular responses during exercise and daily activities.</li>
+            <li>Provide useful health information to support astronaut well-being.</li>
+            <li>Track changes in heart rate over time to understand the body's adaptation to space.</li>
+        </ul>
+        </div>
+        <div class="Section2">
+        <p>How Heart Rate Feature Work</p>
+        <p>Heart Rate Feature combines modern technology and intelligent data analysis to provide an accessible approach to heart rate monitoring.</p>
+        <ul>
+            <li>The system uses a camera-based monitoring approach to capture subtle changes in facial skin colour associated with blood circulation.Understand how the heart responds to microgravity.</li>
+            <li>Advanced image processing techniques analyse these changes and extract useful cardiovascular signals.</li>
+            <li>The processed signals are used to estimate the user's heart rate in beats per minute (BPM).</li>
+            <li>Heart rate measurements are presented through an interactive dashboard, making it easier to observe changes over time.</li>
+            <li>The collected information can help users understand heart rate patterns and identify readings that may need further attention.</li>
+        </ul>
+        </div>
+        <div class="Section3">
+            <p>Heart Rate Features</p>
+        <ul>
+            <li>View estimated heart rate measurements as they are recorded.</li>
+            <li>Visualise heart rate changes through an interactive graph.</li>
+            <li>Estimate heart rate using facial video analysis.</li>
+            <li>Extract cardiovascular signals from subtle facial colour variations.</li>
+            <li>Access health information through a simple and intuitive interface.</li>
+            <li>Understand measurements through clear graphs and numerical readings.</li>
+        </ul>
+        </div>
+        <form action="/StartHeartRate" method="POST">
+    <button type="submit">
+        Press this button to use Heart Rate Feature
+    </button>
+</form>
+     </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Base.css') }}">
+    <script defer src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg glass-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="{{ url_for('static', filename='Images/Logo.png') }}" alt="Astro Health Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <ul class="navbar-nav me-auto my-2 my-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Body Assessment
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/BloodPressure">Blood Pressure</a></li>
+                            <li><a class="dropdown-item" href="/HeartRate">Heart Rate</a></li>
+                            <li><a class="dropdown-item" href="/BloodSugar">Blood Sugar</a></li>
+                            <li><a class="dropdown-item" href="/BodyTemperature">Body Temps</a></li>
+                        <li><a class="dropdown-item" href="https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/">Bone Density Loss</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.nasa.gov/hrp/hazard-distance-from-earth/">
+                            Distance From Earth
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.nasa.gov/hrp/hazard-space-radiation/">
+                            Radiations
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.nasa.gov/humans-in-space/science-in-space-week-of-sept-15-2023-sleep-on-station/">
+                            Track Your Sleep
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar -->
+    <div class="Content">
+        <p> Hello Astronaut</p>
+        <p>
+            Welcome to Astro Health, an innovative health monitoring platform designed to make healthcare smarter,
+            simpler, and more accessible. Our mission is to provide users with reliable health insights through modern
+            technology, helping them better understand their well-being and take control of their health. By combining
+            intelligent monitoring systems with real-time data analysis, Astro Health aims to make health tracking more
+            efficient, accurate, and convenient. Our platform focuses on monitoring important health indicators,
+            including heart rate and other vital signs, providing users with valuable insights into their physical
+            condition. Using advanced computer vision and artificial intelligence technologies, Astro Health explores
+            innovative ways to monitor health without relying entirely on traditional medical equipment. Our goal is to
+            transform complex health information into clear, understandable results that support informed health
+            decisions. At Astro Health, we believe that prevention, awareness, and continuous monitoring are essential
+            to maintaining a healthy lifestyle. Whether you want to keep track of your daily health, understand changes
+            in your vital signs, or gain better awareness of your physical well-being, our platform is designed to
+            support you every step of the way.
+            Smarter Monitoring, Better Understanding, Healthier Living.
+        </p>
+    </div>
+    <div class="ContentCards">
+        <div class="Card">
+            <div class="CardImg CardImg1"></div>
+            <div class="CardText">
+                <div class="CardHeading">
+                    <h2>
+                        Astronaut Mood
+                    </h2>
+                </div>
+                <div class="CardParagraph">
+                    <p>
+                        Astronauts in space may experience a range of emotions, from excitement and happiness to stress, loneliness, and homesickness. Being away from family and Earth for long periods can affect their mood, making emotional well-being and mental health monitoring essential during space missions.
+                    </p>
+                </div>
+                <button class="CardSubmit" onclick="window.location.href='https://www.nasa.gov/missions/station/iss-research/mental-well-being-in-space/';">
+  Visit Page
+</button>
+            </div>
+        </div>
+        <div class="Card">
+            <div class="CardImg CardImg2"></div>
+            <div class="CardText">
+                <div class="CardHeading">
+                    <h2>
+                        Immune System
+                    </h2>
+                </div>
+                <div class="CardParagraph">
+                    <p>
+                        Space travel can weaken an astronaut’s immune system due to microgravity, radiation exposure, and stress. These conditions can reduce immune cell activity, making astronauts more vulnerable to infections and viruses during long-duration space missions.
+                    </p>
+                </div>
+                <button class="CardSubmit" onclick="window.location.href='https://www.nasa.gov/missions/station/scientists-probe-how-long-term-spaceflight-alters-immunity/';">
+  Visit Page
+</button>
+
+            </div>
+        </div>
+        <div class="Card">
+            <div class="CardImg CardImg3"></div>
+            <div class="CardText">
+                <div class="CardHeading">
+                    <h2>
+                       Gravity
+                    </h2>
+                </div>
+                <div class="CardParagraph">
+                    <p>
+                        Gravity is the force that attracts objects towards each other, keeping planets and moons in orbit. In space, astronauts experience microgravity, where they appear weightless. Alternating gravity can simulate changing gravitational conditions, helping astronauts adapt to different gravity levels during space missions.
+                    </p>
+                </div>
+                <button class="CardSubmit" onclick="window.location.href='https://www.nasa.gov/hrp/hazard-gravity-fields/';">
+  Visit Page
+</button>
+
+            </div>
+        </div>
+        <div class="Card">
+            <div class="CardImg CardImg4"></div>
+            <div class="CardText">
+                <div class="CardHeading">
+                    <h2>
+                        Health Risks
+                    </h2>
+                </div>
+                <div class="CardParagraph">
+                    <p>
+                        Astronauts face several health risks in space, including muscle and bone loss, radiation exposure, weakened immunity, vision changes, and sleep disturbances. Microgravity and isolation can also affect their physical and mental well-being during long-duration missions.
+                    </p>
+                </div>
+                <button class="CardSubmit" onclick="window.location.href='https://www.nasa.gov/hhp/human-system-risks/';">
+  Visit Page
+</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

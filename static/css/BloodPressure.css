@@ -1,0 +1,35 @@
+body {
+    background-image: url("../Images/BloodPressure.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.Content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    text-align: center;
+}
+
+.Content p{
+max-width: 70%;
+}
+.Content p:hover{
+background-color: rgba(70, 70, 70, 0.396);
+scale: 1.1;
+}
+
+button{
+    background-color: rgba(20, 30, 50, 0.85);
+    border: none;
+    border-radius: 50px;
+    padding: 8px 15px;
+}
+button:hover{
+    scale: 1.1;
+}

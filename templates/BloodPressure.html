@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/BodyTemperature.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Base.css') }}">
+    <script defer src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <title>Blood Pressure</title>
+</head>
+<body>
+    <!-- nav bar -->
+    
+<nav class="navbar navbar-expand-lg glass-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='Images/Logo.png') }}" alt="Astro Health Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link " href="/">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Body Assessment
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/BloodPressure">Blood Pressure</a></li>
+                        <li><a class="dropdown-item" href="/HeartRate">Heart Rate</a></li>
+                        <li><a class="dropdown-item" href="/BloodSugar">Blood Sugar</a></li>
+                        <li><a class="dropdown-item active" href="/BodyTemperature">Body Temps</a></li>
+                        <li><a class="dropdown-item" href="https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/">Bone Density Loss</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.nasa.gov/hrp/hazard-distance-from-earth/">
+                        Distance From Earth
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.nasa.gov/hrp/hazard-space-radiation/">
+                        Radiations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.nasa.gov/humans-in-space/science-in-space-week-of-sept-15-2023-sleep-on-station/">
+                        Track Your Sleep
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- nav bar -->
+     <div class="Content">
+<p>Blood pressure is one of the most important indicators of human health. It measures the force exerted by circulating blood against the walls of blood vessels. On Earth, gravity plays an important role in determining how blood is distributed throughout the body.</p>
+<p>However, when astronauts travel into space, they experience microgravity, an environment in which the effects of gravity are greatly reduced. This causes significant changes in the way blood and other fluids move around the body.</p>
+<p>As a result, astronauts can experience changes in blood pressure, heart function and fluid distribution. Monitoring these changes is essential to maintaining astronauts' health and ensuring their safety during space missions.</p>
+<p>On Earth, gravity naturally pulls blood and body fluids towards the lower parts of the body, particularly the legs and feet.
+
+In space, microgravity reduces this gravitational effect. Fluids that would normally accumulate in the lower body begin shifting towards the upper body, including the chest, neck and head.
+
+This phenomenon is known as Fluid Shift.</p>
+
+<form action="/BloodPressure" method="POST">
+    <button type="submit">
+        Press this button to record your Blood Pressure
+    </button>
+</form>
+     </div>
+</body>
+</html>
